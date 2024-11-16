@@ -1,0 +1,16 @@
+export const artists = [
+    { id: "Arijit_Singh", className: "Arijit", displayName: "Arijit Singh" },
+    { id: "Talha_Anjum", className: "Talha", displayName: "Talha Anjum" },
+    { id: "Atif_Aslam", className: "Atif", displayName: "Atif Aslam" },
+    { id: "DJ_Snake", className: "Snake", displayName: "DJ Snake" },
+    { id: "Honey_Singh", className: "Honey", displayName: "Honey Singh" },
+    { id: "Badshah", className: "Badshah", displayName: "Badshah" },
+    { id: "Diljit_Dosanjh", className: "Diljit", displayName: "Diljit Dosanjh" },
+    { id: "Shreya_Ghoshal", className: "Shreya", displayName: "Shreya Ghoshal" },
+    { id: "Ali_Zafar", className: "Ali", displayName: "Ali Zafar" },
+    { id: "Rahat_Fateh", className: "Rahat", displayName: "Rahat Fateh" },
+    { id: "AP_Dhillon", className: "AP", displayName: "AP Dhillon" },
+    { id: "AR_Rehman", className: "AR", displayName: "AR Rehman" },
+    { id: "Neha_Kakkar", className: "Neha", displayName: "Neha Kakkar" },
+    { id: "Tony_Kakkar", className: "Tony", displayName: "Tony Kakkar" },
+  ];

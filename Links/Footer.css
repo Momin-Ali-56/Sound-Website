@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 30px 10px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-col h4 {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #36e2ec;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #4c5262;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover {
+    color: white;
+    padding-left: 2px;
+}
+
+.links a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #36e2ec;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover {
+    color: white;
+    background-color: #36e2ec;
+}
+
+ul span {
+    color: #4c5262;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.text {
+    padding-right: 20px;
+    color: #4c5262;
+}
+
+.fab {
+    font-size: 14px;
+}
+
+.footer-links {
+    padding-left: 50px;
+}
+
+@media (max-width: 1024px) {
+    footer {
+        width: 90%;
+    }
+
+    .footer-col {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        width: 95%;
+        padding: 20px 10px;
+    }
+
+    .footer-col {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        width: 100%;
+        padding: 20px 5px;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-col h4::before {
+        all: unset;
+    }
+
+    .footer-links {
+        padding-left: 0;
+    }
+
+    .links a {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-links {
+        padding-left: 0;
+    }
+
+    .links a {
+        margin: 5px;
+    }
+}

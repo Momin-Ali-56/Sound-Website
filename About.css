@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #0D032B;
+    overflow-y: auto;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    width: 94%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+nav ul li {
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: grey;
+    margin: 10px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li .about {
+    color: #fff;
+}
+
+nav ul li:nth-child(2) span {
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background: #8E74BB;
+    bottom: -5px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.user {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .user img {
+    position: absolute;
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+#about-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 10%;
+}
+
+.about-left{
+    width: 50%;
+}
+
+.about-left img {
+    width: 100%;
+    max-width: 420px;
+    height: 550px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-left img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-right {
+    width: 50%;
+}
+
+.about-right h4 {
+    color: #8E74BB;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.about-right h1 {
+    color: #8E74BB;
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    position: relative;
+}
+
+.about-right h1::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #8E74BB;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+.about-right p {
+    color: #fff;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.expertise h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.expertise ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.expertise ul li {
+    display: flex;
+    align-items: center;
+    background: #7e60b1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-logo {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+li p,
+i {
+    cursor: pointer;
+}
+
+.footer-col h4 {
+    color: #7e60b1;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    #about-section {
+        padding: 40px 5%;
+    }
+
+    .about-right {
+        width: 60%;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        justify-content: space-between; /* Keep items in a row */
+    }
+
+    nav ul li {
+        margin: 5px; /* Reduce margin for smaller screens */
+    }
+
+    #about-section {
+        padding: 40px 5%;
+    }
+
+    .about-left img {
+        max-width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .about-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-right h1 {
+        font-size: 32px; /* Decrease font size */
+    }
+
+    .about-right h4 {
+        font-size: 20px; /* Decrease font size */
+    }
+
+    .about-right p {
+        font-size: 14px; /* Decrease font size */
+    }
+
+    .expertise h3 {
+        font-size: 22px; /* Decrease font size */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        font-size: 14px; /* Further decrease font size */
+    }
+
+    .expertise ul {
+        flex-direction: row; /* Keep items in a row */
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .expertise ul li {
+        width: 48%; /* Adjust width to maintain row layout */
+        justify-content: center;
+        margin: 5px 0; /* Reduce margin */
+    }
+}
+
+@media (max-width: 576px) {
+    .about-right h1 {
+        font-size: 28px; /* Decrease font size */
+    }
+
+    .about-right h4 {
+        font-size: 18px; /* Decrease font size */
+    }
+
+    .about-right p {
+        font-size: 12px; /* Decrease font size */
+    }
+
+    nav .user img {
+        width: 40px; /* Adjust user image size */
+        height: 45px;
+    }
+
+    .user {
+        width: 25px; /* Adjust user size */
+        height: 25px;
+    }
+}

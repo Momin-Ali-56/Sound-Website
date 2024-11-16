@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-height: 100vh;
+    background:#152745;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: fadeIn 2s forwards;
+    overflow-y: auto;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+nav {
+    width: 94%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+nav ul li {
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: grey;
+    margin: 10px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li .contact_nav {
+    color: #fff;
+}
+
+nav ul li:nth-child(3) span {
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    background: #36e2ec;
+    /* bottom: -5px; */
+    left: 0;
+    border-radius: 20px;
+}
+
+.user {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .user img {
+    position: absolute;
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+form{
+margin-left:28%;
+}
+
+
+
+
+
+.contact h2 {
+    font-size: 38px;
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    width: 600px;
+    text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field .item::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
